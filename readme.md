@@ -4,7 +4,7 @@ A Dockerfile image built referencing [GoogleChrome Puppeteer guide](https://gith
 It is versioned with Puppeteer version (Latest: 1.17.0)
 
 ### How to use?
-> Use at your own risk
+> ⚠ Use at your own risk. Inspect the content before use
 
 ```js
 this.getBrowserPromise = puppeteer.launch({
