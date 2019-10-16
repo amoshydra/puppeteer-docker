@@ -19,7 +19,10 @@ this.getBrowserPromise = puppeteer.launch({
 ### Development
 
 #### Publishing
+
+##### Default
 ```sh
+cd 1.17.0/default
 docker build -t amoshydra/puppeteer:1.17.0-dubnium .
 
 docker tag amoshydra/puppeteer:1.17.0-dubnium amoshydra/puppeteer:1.17.0-dubnium
@@ -27,4 +30,13 @@ docker push amoshydra/puppeteer:1.17.0-dubnium
 
 docker tag amoshydra/puppeteer:1.17.0-dubnium amoshydra/puppeteer:latest
 docker push amoshydra/puppeteer:latest
+```
+
+##### For privileged environment
+```sh
+cd 1.17.0/privileged
+docker build -t amoshydra/puppeteer:1.17.0-dubnium-privileged .
+
+docker tag amoshydra/puppeteer:1.17.0-dubnium-privileged amoshydra/puppeteer:1.17.0-dubnium-privileged
+docker push amoshydra/puppeteer:1.17.0-dubnium-privileged
 ```
